@@ -1,21 +1,8 @@
-import { StrictMode } from "react";
-//import { createRoot } from "react-dom/client";
+import React from "react";
 import ReactDom from "react-dom";
 
-import App from "./App";
+const App = () => {
+  return <h1> hello </h1>;
+};
 
-//const rootElement = document.getElementById("root");
-//const root = createRoot(rootElement);
-
-//root.render(
-//  <StrictMode>
-//    <App />
-//  </StrictMode>
-//);
-
-ReactDom.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  document.getElementById("root")
-);
+ReactDom.render(<App />, document.getElementById("root"));
